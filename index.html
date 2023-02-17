@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sign-up form</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <script src = 'javascript.js' defer></script>
+
+</head>
+<body>
+    <div class="cover">
+        <img class="cover-image" src="Cover.jpg" alt="Cover image showing the George-Washington Bridge in NYC">
+        <div class="logo-text">
+            <img class="logo" src="Logo.png" alt="The Odin project logo">
+            <div class="text" >SIGN-UP FORM</div>
+        </div>
+    </div>
+
+    <div class="content">
+        <div class="intro">
+            <div class="main-intro">This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. <br>Sign up <em>now</em> to get started.</div>
+            <div class="quote">You <em>know</em> you want to.</div>
+        </div>
+        <div class="form">
+            <form action="#" method="post">
+                <div class="form-content">
+                    <div class="quote2">Let's do this!</div>
+                    <div class="inputs">
+                        <div class="first-name">
+                            <label for="first-name"> FIRST NAME <span class="star">*</span></label>
+                            <input type="text" name="first-name" id="first-name" required>
+                        </div>
+                        <div class="last-name">
+                            <label for="last-name"> LAST NAME <span class="star">*</span></label>
+                            <input type="text" name="last-name" id="last-name" required>
+                        </div>
+                        <div class="email">
+                            <label for="email"> EMAIL <span class="star">*</span></label>
+                            <input type="email" name="email" id="email" required>
+                        </div>
+                        <div class="phone">
+                            <label for="phone-number"> PHONE NUMBER <span class="star">*</span></label>
+                            <input type="tel" name="phone-number" id="phone-number" required>
+                        </div>
+                        <div class="password">
+                            <label for="password"> PASSWORD <span class="star">*</span></label>
+                            <input type="password" name="password" id="password" required>
+                        </div>
+                        <div class="password-confirm">
+                            <label for="password-confirm"> CONFIRM PASSWORD <span class="star">*</span></label>
+                            <input type="password" name="password-confirm" id="password-confirm" onkeyup="displayError()" required>
+                            <h6></h6>
+                        </div>
+                    </div>
+                </div>
+                <button type="submit">Create Account</button>
+
+            </form>
+        </div>
+
+        <div class="bottom">
+                Already have an account? <a href="">Log in</a>
+        </div>
+    </div>
+    
+</body>
+</html>
